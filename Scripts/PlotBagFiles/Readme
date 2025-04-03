@@ -1,0 +1,16 @@
+These scripts allow you to debug and read data from ROS bag files. 
+To use:
+first, convert the .bag file to a .pickle file (this makes it faster to work with the files): 
+  python convertToPickle.py MY_BAG_FILE.bag
+where MY_BAG_FILE.bag is the bag file you created with `rosbag record`
+
+This will create a file called MY_BAG_FILE.pickle
+
+You can now read this with a python script, and plot quantities of interest. Some example scripts are given:
+* ratesControl: plot data relevant to debugging issues with the rates control
+* imuSensors: plots the rate gyro and accelerometer data
+* moCap: plot data from the mocap, and from the estimator
+
+The script `printKeys` can be run on a bag file to tell you what the data is which you can plot. 
+
+Note: You will need to install py3dmath to get this working. Install it from here: https://github.com/muellerlab/py3dmath

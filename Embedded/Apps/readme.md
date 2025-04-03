@@ -1,0 +1,3 @@
+This folder contains the apps we write to run on the microcontroller.
+
+An app can be made to auto-start by editing ``rc.hiperlab``, in the PX4-Firmware repo. TODO: This should be moved into this repository...
